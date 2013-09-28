@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+  <link rel="stylesheet" type="text/css" href="css/index.css" />
+  <link rel="stylesheet" type="text/css" href="css/jqm.theme.css" />
+  <title>phonegapAlpha</title>
+  <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+  <script type="text/javascript" src="js/jqm/jquery.mobile.js"></script>
+  <script type="text/javascript" src="js/my.js"></script>
+  <script type="text/javascript" src="cordova-2.7.0.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+
+  <!-- User-generated css -->
+  <style>
+    
+  </style>
+
+  <!-- User-generated js -->
+  <script>
+    $(function() {
+        $(function() {
+        
+        //Insert code here
+        
+        });
+    });
+  </script>
+</head>
+<body>
+  <div data-role="page" data-control-title="Home" id="page1">
+      <div data-theme="a" data-role="header">
+          <h3>
+              Home
+          </h3>
+      </div>
+      <div data-role="content">
+          <div data-controltype="htmlblock">
+              <button onclick="captureVideo();">
+                  Capture Video
+              </button>
+          </div>
+          <div data-role="fieldcontain">
+              <input type="file" name="pic1acivate" id="pic1" accept="image/*" capture="camera">
+          </div>
+      </div>
+      <div data-role="tabbar" data-iconpos="top" data-theme="a">
+          <ul>
+              <li>
+                  <a href="#page1" data-transition="fade" data-theme="" data-icon="home">
+                      One
+                  </a>
+              </li>
+              <li>
+                  <a href="#page2" data-transition="fade" data-theme="" data-icon="star">
+                      Two
+                  </a>
+              </li>
+              <li>
+                  <a href="#" data-transition="fade" data-theme="" data-icon="info">
+                      Three
+                  </a>
+              </li>
+          </ul>
+      </div>
+  </div>
+  <div data-role="page" data-control-title="RecordVideo" id="page2">
+      <div data-theme="a" data-role="header">
+          <h3>
+              Record Video
+          </h3>
+      </div>
+      <div data-role="content">
+          <a data-role="button" href="#page2">
+              Button
+          </a>
+      </div>
+      <div data-role="tabbar" data-iconpos="top" data-theme="a">
+          <ul>
+              <li>
+                  <a href="#page1" data-transition="fade" data-theme="" data-icon="home">
+                      One
+                  </a>
+              </li>
+              <li>
+                  <a href="#page2" data-transition="fade" data-theme="" data-icon="star">
+                      Two
+                  </a>
+              </li>
+              <li>
+                  <a href="#" data-transition="fade" data-theme="" data-icon="info">
+                      Three
+                  </a>
+              </li>
+          </ul>
+      </div>
+  </div>
+  <script type="text/javascript">
+    app.initialize();
+  </script>
+</body>
+</html>
